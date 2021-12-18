@@ -40,21 +40,21 @@ class CameraActivity : BaseActivity<ActivityCameraBinding>(R.layout.activity_cam
             viewPreview = binding.viewPreview,
             onResult = ::onResult
         )
-        cameraManager.startCamera(changeCamera)
+        cameraManager.startCamera(frontCamera = false, flashMode = false)
     }
 
     private fun controlCameraFunctions() {
         binding.buttonsControls.cameraCapture.setOnClickListener { cameraManager.takePhoto() }
         binding.buttonsControls.changeCamera.setOnClickListener {
-            cameraManager.startCamera(frontCamera = changeCamera())
+            cameraManager.startCamera(flashMode = flashMode(), frontCamera = changeCamera(true))
         }
         binding.buttonsControls.flashCamera.setOnClickListener {
-            cameraManager.startCamera(flashMode = flashMode())
+            cameraManager.startCamera(flashMode = flashMode(), frontCamera = changeCamera(false))
         }
     }
 
-    private fun changeCamera(): Boolean {
-        changeCamera = !changeCamera
+    private fun changeCamera(isEnable: Boolean): Boolean {
+        if (isEnable) changeCamera = !changeCamera
         return changeCamera
     }
 

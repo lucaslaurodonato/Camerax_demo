@@ -29,7 +29,7 @@
             android:id="@+id/close"
             android:layout_width="@dimen/icon_24"
             android:layout_height="@dimen/icon_24"
-            android:layout_margin="@dimen/default_margin"
+            android:layout_margin="@dimen/ultra_margin"
             android:background="@drawable/ic_close"
             android:backgroundTint="@color/white"
             app:layout_constraintStart_toStartOf="parent"

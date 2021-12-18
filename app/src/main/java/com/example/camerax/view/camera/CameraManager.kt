@@ -35,7 +35,7 @@ class CameraManager(
         cameraExecutor.shutdown()
     }
 
-    fun startCamera(frontCamera: Boolean = false, flashMode: Boolean = false) {
+    fun startCamera(frontCamera: Boolean?, flashMode: Boolean?) {
         val cameraProviderFuture = ProcessCameraProvider.getInstance(context)
         cameraProviderFuture.addListener({
             cameraProvider = cameraProviderFuture.get()
@@ -47,7 +47,7 @@ class CameraManager(
         }, ContextCompat.getMainExecutor(context))
     }
 
-    private fun bindCameraUseCases(flashMode: Boolean) {
+    private fun bindCameraUseCases(flashMode: Boolean?) {
         val cameraProvider =
             cameraProvider ?: throw IllegalStateException("Camera initialization failed.")
         val cameraSelector = CameraSelector.Builder().requireLensFacing(lensFacing).build()
@@ -57,7 +57,7 @@ class CameraManager(
         try {
             camera =
                 cameraProvider.bindToLifecycle(owner, cameraSelector, previewView, imageCapture)
-            camera?.cameraControl?.enableTorch(flashMode)
+            flashMode?.let { enableFlash -> camera?.cameraControl?.enableTorch(enableFlash) }
             previewView.setSurfaceProvider(viewPreview.surfaceProvider)
         } catch (exc: Exception) {
             Log.e(TAG, "Use case binding failed $exc")

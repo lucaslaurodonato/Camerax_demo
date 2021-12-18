@@ -50,7 +50,7 @@
             android:id="@+id/text_message"
             android:layout_width="@dimen/match_constraints"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/default_margin"
+            android:layout_marginBottom="@dimen/default_margin"
             android:gravity="center"
             android:text="@string/onboarding_message"
             android:textSize="@dimen/font_16"

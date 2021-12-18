@@ -16,7 +16,7 @@
                 android:id="@+id/picture"
                 android:layout_width="@dimen/match_constraints"
                 android:layout_height="@dimen/match_constraints"
-                android:scaleType="fitXY"
+                android:scaleType="fitCenter"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
