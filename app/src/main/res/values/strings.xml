@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">CameraX Demo</string>
+
+    <!--Onboarding-->
+    <string name="onboarding_message">This project was built to test CameraX library</string>
+    <string name="onboarding_button_start">Start</string>
+
+
+
+    <string name="other">Take another picture</string>
+
+    <string name="lets_take_a_picture">Take a picture.</string>
+    <string name="alert_picture_error">There was an error getting your photo, please try again!</string>
+
+
+</resources>

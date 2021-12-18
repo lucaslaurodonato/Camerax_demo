@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    FONT SIZE-->
+    <dimen name="match_constraints">0dp</dimen>
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="ultra_margin">26dp</dimen>
+
+    <!--Icon-->
+    <dimen name="icon_24">24dp</dimen>
+    <dimen name="icon_56">56dp</dimen>
+    <dimen name="icon_82">82dp</dimen>
+
+    <!--Guide line-->
+    <dimen name="guide_line_default">30dp</dimen>
+
+    <!--Guide line-->
+    <dimen name="font_16">16sp</dimen>
+    <dimen name="font_24">24sp</dimen>
+
+</resources>
