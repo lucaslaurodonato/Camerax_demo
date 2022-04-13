@@ -34,7 +34,7 @@ class PhotoActivity : BaseActivity<ActivityPhotoBinding>(R.layout.activity_photo
 
     private fun setupView() {
         val pictureUri: Uri? = Uri.parse(picture)
-        binding.includePicture.picture.setImageURI(pictureUri)
+        binding.ivPhoto.setImageURI(pictureUri)
     }
 
     private fun takeAnotherPhoto() {
