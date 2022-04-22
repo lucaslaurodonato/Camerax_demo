@@ -3,7 +3,6 @@
     package="com.example.camerax">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-feature android:name="android.hardware.camera.any" />
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
@@ -24,8 +23,11 @@
 
         <activity
             android:name=".view.camera.CameraActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:label="@string/app_name" />
+
+        <activity
+            android:name=".view.barcode.BarcodeReaderActivity"
+            android:exported="true" />
 
         <activity
             android:name=".view.photo.PhotoActivity"

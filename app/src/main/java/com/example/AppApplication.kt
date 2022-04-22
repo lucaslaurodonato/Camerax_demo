@@ -3,9 +3,6 @@ package com.example
 import android.content.Context
 import androidx.multidex.MultiDex
 import androidx.multidex.MultiDexApplication
-import com.example.camerax.di.applicationModules
-import org.koin.android.ext.koin.androidContext
-import org.koin.core.context.startKoin
 import java.lang.ref.WeakReference
 
 class AppApplication : MultiDexApplication() {
@@ -16,14 +13,6 @@ class AppApplication : MultiDexApplication() {
         val context = applicationContext
         sContext = WeakReference(context)
         setupMultiDex()
-        setupKoin()
-    }
-
-    private fun setupKoin() {
-        startKoin {
-            androidContext(this@AppApplication)
-            modules(applicationModules)
-        }
     }
 
     private fun setupMultiDex() {

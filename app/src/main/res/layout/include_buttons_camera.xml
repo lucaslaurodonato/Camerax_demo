@@ -8,39 +8,39 @@
         android:background="@drawable/shape_background_buttons">
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/camera_capture"
+            android:id="@+id/iv_camera_capture"
             android:layout_width="@dimen/icon_56"
             android:layout_height="@dimen/icon_56"
             android:src="@drawable/ic_camera"
             android:tint="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/change_camera"
-            app:layout_constraintStart_toEndOf="@+id/flash_camera"
+            app:layout_constraintEnd_toStartOf="@+id/iv_change_camera"
+            app:layout_constraintStart_toEndOf="@+id/iv_flash_camera"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/change_camera"
+            android:id="@+id/iv_change_camera"
             android:layout_width="@dimen/icon_24"
             android:layout_height="@dimen/icon_24"
             android:layout_margin="@dimen/default_margin"
             android:src="@drawable/ic_change_camera"
             android:tint="@color/white"
-            app:layout_constraintBottom_toBottomOf="@+id/camera_capture"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_camera_capture"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/camera_capture"
-            app:layout_constraintTop_toTopOf="@+id/camera_capture" />
+            app:layout_constraintStart_toEndOf="@+id/iv_camera_capture"
+            app:layout_constraintTop_toTopOf="@+id/iv_camera_capture" />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/flash_camera"
+            android:id="@+id/iv_flash_camera"
             android:layout_width="@dimen/icon_24"
             android:layout_height="@dimen/icon_24"
             android:layout_margin="@dimen/default_margin"
             android:src="@drawable/ic_flash"
             android:tint="@color/white"
-            app:layout_constraintBottom_toBottomOf="@+id/camera_capture"
-            app:layout_constraintEnd_toStartOf="@+id/camera_capture"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_camera_capture"
+            app:layout_constraintEnd_toStartOf="@+id/iv_camera_capture"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/camera_capture" />
+            app:layout_constraintTop_toTopOf="@+id/iv_camera_capture" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

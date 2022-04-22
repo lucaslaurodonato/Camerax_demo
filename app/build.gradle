@@ -49,11 +49,10 @@ dependencies {
     implementation "androidx.multidex:multidex:$multidexVersion"
     androidTestImplementation "androidx.test.ext:junit:$jUnit"
     androidTestImplementation "androidx.test.espresso:espresso-core:$expresso"
+    implementation "com.google.mlkit:barcode-scanning:$barcode"
     testImplementation 'junit:junit:4.+'
     implementation "androidx.camera:camera-camera2:$camerax_version"
     implementation "androidx.camera:camera-lifecycle:$camerax_version"
     implementation "androidx.camera:camera-view:$cameraXView"
     implementation "com.airbnb.android:lottie:$lottie"
-    implementation "org.koin:koin-android:$koin"
-
 }
