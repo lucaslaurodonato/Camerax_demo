@@ -9,13 +9,12 @@ import androidx.camera.core.*
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.camera.view.PreviewView
 import androidx.core.content.ContextCompat
-import com.example.camerax.mechanism.Constants.OCR.FILENAME_FORMAT
+import com.example.camerax.mechanism.Constants.FILENAME_FORMAT
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.*
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
-import java.util.concurrent.atomic.AtomicBoolean
 
 class CameraManager(
     private val owner: AppCompatActivity,

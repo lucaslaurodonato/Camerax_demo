@@ -1,6 +1,8 @@
 package com.example.camerax.view.onboarding
 
 import android.Manifest.permission.CAMERA
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.result.contract.ActivityResultContracts
 import com.example.camerax.R
@@ -12,6 +14,10 @@ import com.example.camerax.view.barcode.BarcodeReaderActivity
 import com.example.camerax.view.camera.CameraActivity
 
 class OnboardingActivity : BaseActivity<ActivityOnboardingBinding>(R.layout.activity_onboarding) {
+
+    companion object {
+        fun getStartIntent(context: Context) = Intent(context, OnboardingActivity::class.java)
+    }
 
     private var appPerms = arrayOf(CAMERA)
     private var checkIfIsBarcodeScreen = false

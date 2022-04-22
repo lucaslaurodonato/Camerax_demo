@@ -1,18 +1,21 @@
 <resources>
 
     <string name="app_name">CameraX Demo</string>
+    <string name="app_developer_credit">App create by Lucas Donato</string>
 
     <!--Onboarding-->
     <string name="onboarding_message">This project was built to test CameraX library</string>
     <string name="onboarding_button_start_camera">Start Camera</string>
     <string name="onboarding_button_start_barcode">Start Barcode Reader</string>
 
-
+    <!--Camera-->
     <string name="other">Take another picture</string>
-
     <string name="lets_take_a_picture">Take a picture.</string>
+
+    <!--Error-->
+    <string name="bar_code_error_to_read">Ops... error reading this barcode</string>
     <string name="alert_picture_error">There was an error getting your photo, please try again!</string>
 
-    <string name="bar_code_error_to_read">Ops... error reading this barcode</string>
+
 
 </resources>

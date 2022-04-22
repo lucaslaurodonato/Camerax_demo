@@ -6,7 +6,7 @@ import android.net.Uri
 import android.os.Bundle
 import com.example.camerax.R
 import com.example.camerax.databinding.ActivityPhotoBinding
-import com.example.camerax.mechanism.Constants.OCR.EXTRA_IMAGE_CAMERA
+import com.example.camerax.mechanism.Constants.EXTRA_IMAGE_CAMERA
 import com.example.camerax.view.base.BaseActivity
 import com.example.camerax.view.camera.CameraActivity
 
