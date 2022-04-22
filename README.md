@@ -6,8 +6,8 @@
 
 <ul>
   <li><a href="https://developer.android.com/kotlin?hl=pt" rel="nofollow"> Kotlin :heart: </a></li>
- <li><a href="https://developers.google.com/ml-kit/vision/barcode-scanning" rel="nofollow"> Barcode-scanning </a></li>
   <li><a href="https://lottiefiles.com/" rel="nofollow">Lottie :stuck_out_tongue:</a></li>
+  <li><a href="https://developers.google.com/ml-kit/vision/barcode-scanning" rel="nofollow"> Barcode-Scanning </a></li>
   <li><a href="https://developer.android.com/training/camerax?hl=pt-br" rel="nofollow">CameraX</a></li>
 </ul>
 
